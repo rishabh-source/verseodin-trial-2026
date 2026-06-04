@@ -2,7 +2,7 @@
 
 A paid 1-day trial to ship two small prototype features. Independent of any production codebase. Mock data. Your build.
 
-> **TL;DR:** **USD $300 flat, paid on submission. 8 hours of build, 5 calendar days to deliver. Both features required. AI tools allowed and expected.** Full details in [`docs/GROUND_RULES.md`](docs/GROUND_RULES.md).
+> **TL;DR:** **8 hours of build, 5 calendar days to deliver. Both features required. AI tools allowed and expected.** Full details in [`docs/GROUND_RULES.md`](docs/GROUND_RULES.md).
 
 ---
 
