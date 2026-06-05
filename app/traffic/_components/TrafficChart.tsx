@@ -98,9 +98,9 @@ export function TrafficChart({ data, dateRange = 90 }: TrafficChartProps) {
             />
             <Tooltip
               content={({ active, payload, label }) => {
-                if (!active || !payload || !payload.length) return null;
+                if (!active || !payload || !payload.length || label === undefined) return null;
 
-                const dateStr = new Date(label).toLocaleDateString("en-US", {
+                const dateStr = new Date(label as string).toLocaleDateString("en-US", {
                   weekday: "short",
                   day: "numeric",
                   month: "short",
