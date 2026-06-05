@@ -20,7 +20,7 @@ For the traffic dashboard, I built a highly performant stacked bar chart using R
 
 **Feature 2: Action Centre (`/actions`)**
 I implemented an extensible triage queue driven by a pure derivation function (`deriveActions`). It uses a Handler Registry pattern, ensuring that adding a new event type simply requires appending a new handler rather than extending a massive switch statement. Actions are assigned deterministic IDs by hashing their sorted source event IDs, ensuring that re-running derivation yields the exact same IDs for the same underlying events.
-*What's working*: Grouping of Reddit mentions, articles, missed citations, and competitor dominance into actionable cards. Composable filtering works flawlessly across both Active and Dismissed tabs, and state is reliably persisted and hydrated from `localStorage` without UI flashing.
+*What's working*: Grouping of Reddit mentions, articles, missed citations, and competitor dominance into actionable cards. Composable filtering works flawlessly across both Active and Dismissed tabs, and state is reliably persisted and hydrated from `localStorage` without UI flashing. I also integrated a top-level banner (`PlanBanner.tsx`) that displays the user's current plan limits ("You're on the Explore plan — tracking 10 prompts with ChatGPT only").
 *What's not working*: Sorting by date or custom severity is not yet implemented. There is also no pagination, meaning a massive influx of events could theoretically cause a long, un-virtualized DOM list.
 
 ## What I cut and why

@@ -32,7 +32,7 @@ export default function TrafficPage() {
         <TrafficSkeleton />
       ) : error ? (
         <div className="flex flex-col items-center justify-center py-20 text-center">
-          <p className="text-base font-medium text-gray-900">Couldn't load traffic data.</p>
+          <p className="text-base font-medium text-gray-900">Couldn&apos;t load traffic data.</p>
           <p className="mt-1 text-sm text-gray-500 mb-4">Try refreshing the page.</p>
           <button
             onClick={retry}
@@ -46,7 +46,7 @@ export default function TrafficPage() {
           {(!data || data.chartData.length === 0) ? (
             <div className="flex flex-col items-center justify-center h-[380px] text-center border border-dashed border-gray-300 rounded-xl bg-gray-50/50">
               <p className="text-base font-medium text-gray-900">No AI traffic yet.</p>
-              <p className="mt-1 text-sm text-gray-500">Once AI crawlers visit your site, you'll see them here.</p>
+              <p className="mt-1 text-sm text-gray-500">Once AI crawlers visit your site, you&apos;ll see them here.</p>
             </div>
           ) : (
             <div className="w-full overflow-x-auto pb-4">

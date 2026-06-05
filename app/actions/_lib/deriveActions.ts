@@ -22,7 +22,7 @@ function stableActionId(sourceEventIds: string[]): string {
 }
 
 // Handler Registry Pattern
-type AnyHandler = EventHandler<any>;
+type AnyHandler = EventHandler<MonitoringEvent>;
 
 interface EventHandler<E extends MonitoringEvent> {
   eventType: E["event_type"];

@@ -42,7 +42,7 @@ export default function ActionsPage() {
       <main className="flex-1 mx-auto w-full max-w-7xl px-6 py-8">
         {!storageAvailable && (
           <div className="mb-6 p-4 bg-amber-50 border border-amber-200 text-amber-800 rounded-lg text-sm">
-            Couldn't save your changes — they won't persist if you reload.
+            Couldn&apos;t save your changes — they won&apos;t persist if you reload.
           </div>
         )}
 

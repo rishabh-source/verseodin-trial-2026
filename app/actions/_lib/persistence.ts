@@ -13,7 +13,7 @@ export function loadPersistedStatuses(): Map<string, Status> | null {
       return new Map<string, Status>(parsed);
     }
     return null;
-  } catch (e) {
+  } catch {
     return null;
   }
 }
@@ -23,7 +23,7 @@ export function persistActions(actions: Action[]): boolean {
     const pairs = actions.map(a => [a.id, a.status]);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(pairs));
     return true;
-  } catch (e) {
+  } catch {
     return false;
   }
 }
