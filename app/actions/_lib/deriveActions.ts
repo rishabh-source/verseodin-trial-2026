@@ -22,7 +22,8 @@ function stableActionId(sourceEventIds: string[]): string {
 }
 
 // Handler Registry Pattern
-type AnyHandler = EventHandler<MonitoringEvent>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AnyHandler = EventHandler<any>;
 
 interface EventHandler<E extends MonitoringEvent> {
   eventType: E["event_type"];
